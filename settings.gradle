@@ -7,4 +7,18 @@
  * in the user manual at https://docs.gradle.org/6.0.1/userguide/multi_project_builds.html
  */
 
+
+
+buildCache {
+    remote(HttpBuildCache) {
+        url = 'https://eu-west-1-docker.pkg.dev/named-tube-345019/gradle-cache/cache'
+        credentials {
+            username = '_json_key'
+            password = 'some-complicated-password'
+        }
+    }
+}
+
+
+
 rootProject.name = 'gradle-example'
