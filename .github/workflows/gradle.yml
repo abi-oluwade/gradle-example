@@ -23,6 +23,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - uses: google-github-actions/auth@v2.1.4
+      with:
+          credentials_json: ${{ secrets.GRADLE_CACHE_KEY }}
+          create_credentials_file: true
+          
     - uses: actions/cache@4.2.3
       with:
           path: ~/.gradle/caches
