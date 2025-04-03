@@ -12,10 +12,7 @@
 buildCache {
     remote(HttpBuildCache) {
         url = 'https://eu-west-1-docker.pkg.dev/named-tube-345019/gradle-cache/'
-        credentials {
-            username = '_json_key'
-            password = 'some-complicated-password'
-        }
+        push = true
     }
 }
 
