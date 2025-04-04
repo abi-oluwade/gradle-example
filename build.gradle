@@ -1,6 +1,10 @@
 plugins {
     id 'groovy'
     id 'application'
+    id 'java'
+    id "maven-publish"
+    id "com.google.cloud.artifactregistry.gradle-plugin" version "2.2.4"
+    id 'maven'
     id 'com.github.johnrengelman.shadow' version '5.2.0'
 }
 
@@ -24,6 +28,8 @@ dependencies {
 
     // Dependency from local jar
     implementation ':simple-jar'
+
+    compile "com.google.guava:guava:31.1-jre"
 }
 
 application {
