@@ -19,7 +19,7 @@ buildCache {
 dependencies {
     classpath "gradle.plugin.com.google.cloud.artifactregistry:artifactregistry-gradle-plugin:2.2.4"
   }
-}
+
 apply plugin: "com.google.cloud.artifactregistry.gradle-plugin"
 
 
